@@ -26,19 +26,18 @@ public class ActivitySegundaPantalla extends AppCompatActivity {
         txtEdadAS = (TextView) findViewById(R.id.lblEdadAS);
         txtCorreoAS = (TextView) findViewById(R.id.lblCorreoAS);
 
-        String dato = getIntent().getStringExtra("dato1");
-        txtNombreAS.setText(dato);
-        String dato1 = getIntent().getStringExtra("dato2");
-        txtApellidoAS.setText(dato);
-        String dato2 = getIntent().getStringExtra("dato3");
-        txtEdadAS.setText(dato);
-        String dato3 = getIntent().getStringExtra("dato4");
-        txtCorreoAS.setText(dato);
+        String dato1 = getIntent().getStringExtra("dato1");
+        txtNombreAS.setText(dato1);
+        String dato2 = getIntent().getStringExtra("dato2");
+        txtApellidoAS.setText(dato2);
+        String dato3 = getIntent().getStringExtra("dato3");
+        txtEdadAS.setText(dato3);
+        String dato4 = getIntent().getStringExtra("dato4");
+        txtCorreoAS.setText(dato4);
     }
 
     public void Volver(View view){
         Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
     }
-
 }

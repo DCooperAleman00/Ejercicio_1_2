@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
     public void Enviar(View view){
         Intent i = new Intent(this, ActivitySegundaPantalla.class);
         i.putExtra("dato1",txtNombre.getText().toString());
-        i.putExtra("name2",txtApellido.getText().toString());
-        i.putExtra("name3",txtEdad.getText().toString());
-        i.putExtra("name4",txtCorreo.getText().toString());
+        i.putExtra("dato2",txtApellido.getText().toString());
+        i.putExtra("dato3",txtEdad.getText().toString());
+        i.putExtra("dato4",txtCorreo.getText().toString());
         startActivity(i);
     }
 }
